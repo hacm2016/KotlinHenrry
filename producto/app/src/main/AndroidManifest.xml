@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.productofinal">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProductoFinal"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".ui.product_detail.activities.ProductoDetailActivity"
+            android:label="@string/title_product_detail"></activity>
+
+        <activity
+            android:name=".ui.shopping.activities.ShoppingActivity"
+            android:label="@string/title_carrito"></activity>
+        <activity
+            android:name=".ui.lateral.DrawerLateralActivity"
+            android:label="@string/title_activity_drawer_lateral"
+            android:theme="@style/Theme.ProductoFinal.NoActionBar" />
+        <activity
+            android:name=".ui.login.activities.LoginActivity"
+            android:theme="@style/Theme.ProductoFinal.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.signup.activities.SignUpActivity" />
+    </application>
+
+</manifest>
